@@ -15,5 +15,6 @@ Cara Menjalankan:
 2. Terdapat button add dan masukan form ditampilkan pada sebuah tabel. ✔
 3. Terdapat button hapus pada tabel. ✔
 4. Terdapat button yang dapat mengubah salah satu isi dari tabel. (Dibebaskan, bisa mengubah isi dari atribut status, atau isi atribut lainnya). ✔
+5. Video Menyusul ...
 
 ```
