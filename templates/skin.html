@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <title>Data Product</title>
+  <style>
+    .box {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 2em;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light mb-4" style="
+        background-color: white;
+        filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+      ">
+    <a class="navbar-brand" href="index.php" style="font-weight: 600">Tugas Praktikum MVC | Fajar Zuliansyah
+      Trihutama</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <div class="container p-4">
+    <div class="box p-5 offset-md-2 col-md-8">
+      <form action="index.php" method="POST">
+        <div class="form-row col-md-12">
+          <h2 class="mx-auto">Input Data Product</h2>
+        </div>
+
+        <hr />
+
+        <div class="form-group col-md-12">
+          <div class="form-group">
+            <label for="tname">Product Code</label>
+            <input type="text" class="form-control w-25" name="tkode" required />
+          </div>
+        </div>
+
+        <div class="form-group col-md-12">
+          <div class="form-group">
+            <label for="tname">Product Name</label>
+            <input type="text" class="form-control" name="tname" required />
+          </div>
+        </div>
+
+        <div class="form-group col-md-12">
+          <label for="texpired">Expired</label>
+          <input class="form-control w-50" type="date" name="texpired" required />
+        </div>
+
+        <div class="form-group col-md-12">
+          <div class="form-group w-25">
+            <label for="tstok">Stock</label>
+            <input type="number" class="form-control" name="tstok" required />
+          </div>
+        </div>
+
+        <div class="form-group col-md-12">
+          <label for="tkategori">Category</label>
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="tkategori" id="elektronik" value="Elektronik" />
+              <label class="form-check-label" for="elektronik">Elektronik</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="tkategori" id="makanan" value="Makanan" />
+              <label class="form-check-label" for="makanan">Makanan</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="tkategori" id="pakaian" value="Pakaian" />
+              <label class="form-check-label" for="pakaian">Pakaian</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="tkategori" id="kendaraan" value="Kendaraan" />
+              <label class="form-check-label" for="kendaraan">Kendaraan</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col-md-12">
+          <div class="form-group w-25">
+            <label for="tharga">Harga</label>
+            <input type="number" class="form-control" name="tharga" required />
+          </div>
+        </div>
+
+        <div class="form-group col-md-12">
+          <label for="tdetail">Description</label>
+          <textarea class="form-control" name="tdesc" rows="3" required></textarea>
+        </div>
+
+        <button type="submit" name="add" class="btn btn-primary btn-block">
+          Add
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Tabel 1 - Task -->
+  <div class="box p-5 offset-md-1 col-md-10">
+    <div class="row">
+      <h3 class="mx-auto mb-4">Product</h3>
+    </div>
+    <!-- TABEL1 -->
+    <table class="table table-striped text-center">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Kode</th>
+          <th>Name</th>
+          <th style="width: 11%;">Expired</th>
+          <th>Stock</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Status</th>
+          <th>Description</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <!-- DATA YG AKAN DIGANTI -->
+      DATA_TABEL
+    </table>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    // sesuaikan dengan local direktori
+    let baseDirektori = "http://localhost/tp-mvc";
+
+    $(".btn-info").click(function (e) {
+      const product_id = $(this).attr('id');
+      $.ajax({
+        url: "model/show.php",
+        type: "post",
+        dataType:"json",
+        data: { product_id: product_id },
+        success: function (data) {
+          $('#tstok').val(data.stok_pd);
+          $('#kode').val(data.kode_pd);
+        }
+      });
+    });
+
+    $("#update").click(function(e){
+      const data = $('#form-data').serialize();
+      $.ajax({
+        url: "model/update.php",
+        type: "post",
+        dataType: "json",
+        data: data,
+        success: (response) => {
+          window.location.href = baseDirektori;
+          $('html, body').animate({scrollTop: 500}, 'slow');
+        },
+        error: (e)=>{
+          console.log(e.responseText);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
