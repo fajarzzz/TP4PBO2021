@@ -1,7 +1,7 @@
 <?php
 
 /******************************************
-PRAKTIKUM RPL
+PRAKTIKUM DPBO
  ******************************************/
 
 // Konfigurasi basis data
